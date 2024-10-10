@@ -1,4 +1,4 @@
-const rolesAvailable = require('../constants/roles')
+const rolesAvailable = require('../Constraints/roles')
 
 //An middleware to check if the user trying to access is either itself or admin
 

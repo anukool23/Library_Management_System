@@ -6,7 +6,7 @@ const UserModel = require("../Models/user.model");
 const authMiddleware = require('../Middlewares/auth.middleware');
 const checkCurrentUser = require('../Middlewares/checkCurrentUser.middleware');
 const checkAccess = require('../Middlewares/checkAccess.middleware');
-const rolesAvailable = require('../Constants/roles');
+const rolesAvailable = require('../Constraints/roles');
 var salt = bcrypt.genSaltSync(Number(process.env.SALT_BCRYPT));
 
 //1. To retrive all users (Admin level access)

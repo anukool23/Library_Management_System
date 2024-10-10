@@ -5,7 +5,7 @@ const AuthorModel = require("../Models/author.model");
 const connectToDb = require("../Config/db");
 const authMiddleware = require('../Middlewares/auth.middleware');
 const checkAccess = require('../Middlewares/checkAccess.middleware');
-const rolesAvailable = require('../Constants/roles');
+const rolesAvailable = require('../Constraints/roles');
 const checkCurrentUser = require('../Middlewares/checkCurrentUser.middleware');
 
 
